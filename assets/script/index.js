@@ -34,22 +34,22 @@ count+=1;
   div.classList.add(shape.value);
   div.classList.add("shapes");
   div.style.backgroundColor = name[colour.value];
-  arr.push(div);
+ let arr2 = new Shape(shape.value, colour.value)
   
-  
+  arr.push(arr2)
   
   child.appendChild(div);
   
-   //div.setAttribute(shape);
-  //let target = shape.getAttribute('target')
-  onEvent('click', div, function(){
+   div.setAttribute('shapeType', count);
+  
+  onEvent('click', div, (event)=>{
     
   
 
-    //para.innerText = arr[event.shape.getAttribute(shape)].getinfo();
+    para.innerText = `Unit: ${(arr.indexOf(arr2)) + 1} ${arr[event.target.getAttribute('shapeType') - 1].getinfo() }`;
     
     
-    para.innerText = `Unit:${arr.indexOf(div) + 1} ${shape.value} ${colour.value}`;
+   
   });
  
 });

@@ -3,7 +3,9 @@
     margin-inline: auto;
     
 }
-
+body{
+    background-color: #191919;
+}
 .child{
     padding: 10px;
     height: 560px;
@@ -71,3 +73,14 @@ button {
     border-radius: 50%;
  }
 
+ p{
+    font-size: 18px;
+    color:#fff;
+    font-family: sans-serif;
+ }
+
+ h2{
+    font-size: 32px;
+    color: #fff;
+    font-family: sans-serif;
+ }
