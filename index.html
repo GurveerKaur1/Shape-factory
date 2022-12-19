@@ -26,7 +26,7 @@
     <main>
         <div class="container">
 
-            
+
             <div class="row">
                 <h2>Shape Factory</h2>
                 <div class="button">
@@ -34,8 +34,8 @@
                         <select name="shape" class="shape">
                             <option value="" disabled selected hidden>Shapes</option>
                             <option value="circle">Circle</option>
-                             <option value="square">Square</option>
-                         </select>
+                            <option value="square">Square</option>
+                        </select>
                         <select name="color" class="color">
                             <option value="" disabled selected hidden>Colors</option>
                             <option value="blue">Blue</option>
@@ -46,20 +46,32 @@
                         </select>
                         <button class="start">Check</button>
                     </form>
-                    
+
                 </div>
-                    
-                    <div class="child">
+
+                <div class="child">
 
 
-                    </div>
+                </div>
                 <p></p>
             </div>
+        </div>
     </main>
+    <script>
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-    <noscript>
+
+
+        window.addEventListener('resize', () => {
+            vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
+    </script>
+
+    <!-- <noscript>
         <p>This page requires a Javascript-enabled browser</p>
-    </noscript>
+    </noscript> -->
 </body>
 
 </html>
