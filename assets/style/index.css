@@ -5,6 +5,7 @@
 }
 body{
     background-color: #191919;
+    height: calc(var(--vh, 1vh) * 100);
 }
 .child{
     padding: 10px;
@@ -16,7 +17,9 @@ body{
 .row{
     display: grid;
     place-items: center;
-    
+    justify-items: center;
+    align-content: center;
+      height: 100vh;  
 }
 
 
